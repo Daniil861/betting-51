@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting 51 - game"
+})
+
+<body>
+	<div class="wrapper wrapper_game">
+		<div class="wrapper__game game">
+			<div class="game__body">
+
+				<div class="game__field field">
+					<div class="field__body">
+						<div class="field__header header-field">
+							<div class="header-field__body">
+								<div class="header-field__score-box score-box _v2-gray-bd">
+									<div class="score-box__body">
+										<div class="score-box__title">Ballance</div>
+										<div class="score-box__score score">0</div>
+									</div>
+								</div>
+								<a href="index.html" class="header-field__button-back button _fz-20">
+									<span>Menu</span>
+								</a>
+							</div>
+						</div>
+						<div class="field__main">
+							<div class="field__frame-box">
+								<div class="field__frame">
+									<div class="field__walls">
+										<div data-wall="1" class="field__wall"></div>
+										<div data-wall="2" class="field__wall"></div>
+										<div data-wall="3" class="field__wall"></div>
+										<div data-wall="4" class="field__wall"></div>
+										<div data-wall="5" class="field__wall"></div>
+									</div>
+									<div class="field__balls"></div>
+									<img src="@img/game/frame.png" alt="Image">
+								</div>
+								<div class="field__coeffs-box">
+									<div class="field__coeffs">
+										<div class="field__coeff">x1</div>
+										<div class="field__coeff">x2</div>
+									</div>
+									<div class="field__coeffs">
+										<div class="field__coeff">x5</div>
+										<div class="field__coeff">x5</div>
+									</div>
+									<div class="field__coeffs">
+										<div class="field__coeff">x2</div>
+										<div class="field__coeff">x1</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field__footer footer-field">
+							<div class="footer-field__body">
+								<div class="footer-field__scale-box">
+									<div class="footer-field__scale"><span></span></div>
+									<div class="footer-field__arrow"></div>
+								</div>
+								<div class="footer-field__button-box">
+									<button type="button" class="footer-field__button button"><span>hit</span></button>
+								</div>
+								<div class="footer-field__bet-box bet-box">
+									<div class="bet-box__body">
+										<div class="bet-box__plus">+</div>
+										<div class="bet-box__bet">
+											<div class="bet-box__title">BET</div>
+											<div class="bet-box__score score-bet">0</div>
+										</div>
+										<div class="bet-box__minus">-</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

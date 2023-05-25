@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting 51 - game"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__game game">
+			<div class="game__body">
+				<a href="main.html" class="game__button-home"><span>back</span></a>
+
+				<div class="game__controls controls-game">
+					<div class="controls-game__body">
+						<div class="controls-game__switch switch">
+							<div class="switch__body">
+								<div class="switch__inner">
+									<span></span>
+									<div class="switch__button"></div>
+								</div>
+							</div>
+						</div>
+						<div class="controls-game__indicator indicator">
+							<div class="indicator__body">
+								<div class="indicator__text text-inria">POWER</div>
+								<div class="indicator__items">
+									<span class="_active"></span><span class="_active"></span><span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="controls-game__button-box">
+							<button type="button" class="controls-game__button"><span></span></button>
+						</div>
+						<div class="controls-game__stake stake">
+							<div class="stake__body">
+								<div class="stake__text text-inria">STAKE</div>
+								<div class="stake__coeff">1.0</div>
+							</div>
+						</div>
+						<div class="game__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game icon-anim"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="game__field field">
+					<div class="field__body">
+						<div class="field__gate-box">
+							<div class="field__gate"></div>
+							<div class="field__container container">
+								<div class="container__body">
+									<div data-coeff="1" data-pos="1" class="container__item">
+										<div class="left-wall"></div>
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">?</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="2" data-pos="2" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x2</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="3" data-pos="3" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x3</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="3" data-pos="4" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x3</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="10" data-pos="5" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x10</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="3" data-pos="6" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x3</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="3" data-pos="7" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x3</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="2" data-pos="8" class="container__item">
+										<div class="wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">x2</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div data-coeff="1" data-pos="9" class="container__item">
+										<div class="wall"></div>
+										<div class="right-wall"></div>
+										<div class="container__basket basket">
+											<div class="basket__body">
+												<div class="basket__main-block">
+													<div class="basket__text">?</div>
+												</div>
+												<div class="basket__left-block"></div>
+												<div class="basket__right-block"></div>
+											</div>
+										</div>
+									</div>
+									<div class="container__walls">
+										<div class="container__floor container__floor_1"></div>
+										<div class="container__floor container__floor_2"></div>
+										<div class="container__floor container__floor_3"></div>
+										<div class="container__floor container__floor_4"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

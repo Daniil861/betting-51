@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting 51"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__main main">
+			<div class="main__body">
+				<div class="main__content">
+					<div class="main__lobby">
+						<div class="main__gate"></div>
+						<div class="main__buttons">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game icon-anim"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+							<button type="button" data-button="game" class="main__button button"><span>Play</span></button>
+							<button type="button" data-button="shop"
+								class="header-main__button button"><span>Store</span></button>
+						</div>
+					</div>
+					<div class="main__shop shop">
+						<div class="shop__body">
+							<button type="button" class="shop__button-back">
+								<span>back</span>
+							</button>
+							<div class="shop__items">
+								<div data-subject="1" class="shop__item">
+									<div class="shop__item-inner">
+										<div class="shop__image">
+											<div class="shop__image-inner"><img src="@img/shop/shop-1.png" alt="Image"></div>
+										</div>
+										<div class="shop__price-box">
+											<div class="shop__icon icon-game"></div>
+											<div data-price="1" class="shop__price">0</div>
+											<div class="shop__hide-text">Classic</div>
+										</div>
+										<div data-shop-button="1" class="shop__button button"><span>Buy</span></div>
+									</div>
+								</div>
+								<div data-subject="2" class="shop__item">
+									<div class="shop__item-inner">
+										<div class="shop__image">
+											<div class="shop__image-inner"><img src="@img/shop/shop-2.png" alt="Image"></div>
+										</div>
+										<div class="shop__price-box">
+											<div class="shop__icon icon-game"></div>
+											<div data-price="2" class="shop__price">0</div>
+											<div class="shop__hide-text">Baseball</div>
+										</div>
+										<div data-shop-button="2" class="shop__button button"><span>Buy</span></div>
+									</div>
+								</div>
+								<div data-subject="3" class="shop__item">
+									<div class="shop__item-inner">
+										<div class="shop__image">
+											<div class="shop__image-inner"><img src="@img/shop/shop-3.png" alt="Image"></div>
+										</div>
+										<div class="shop__price-box">
+											<div class="shop__icon icon-game"></div>
+											<div data-price="3" class="shop__price">0</div>
+											<div class="shop__hide-text">Cricket</div>
+										</div>
+										<div data-shop-button="3" class="shop__button button"><span>Buy</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
