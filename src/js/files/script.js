@@ -69,23 +69,22 @@ export function checkBoughtSubjects() {
 	}
 }
 export function writeSelected() {
-	document.querySelectorAll('[data-shop-button]').forEach(btn => {
+	document.querySelectorAll('[data-shop-button] span').forEach(btn => {
 		if (btn.closest('._bought')) {
-			btn.innerHTML = `<span>Select</span>`;
+			btn.textContent = `Select`;
 		}
 	})
 
 	if (+sessionStorage.getItem('current-subject') === 1) {
-		document.querySelector('[data-shop-button="1"]').innerHTML = `<span>Selected</span>`;
+		document.querySelector('[data-shop-button="1"] span').textContent = `Selected`;
 		document.querySelector('[data-subject="1"]').classList.add('_selected');
 	} else if (+sessionStorage.getItem('current-subject') === 2) {
-		document.querySelector('[data-shop-button="2"]').innerHTML = `<span>Selected</span>`;
+		document.querySelector('[data-shop-button="2"] span').textContent = `Selected`;
 		document.querySelector('[data-subject="2"]').classList.add('_selected');
 	} else if (+sessionStorage.getItem('current-subject') === 3) {
-		document.querySelector('[data-shop-button="3"]').innerHTML = `<span>Selected</span>`;
+		document.querySelector('[data-shop-button="3"] span').textContent = `Selected`;
 		document.querySelector('[data-subject="3"]').classList.add('_selected');
 	}
-
 }
 function checkCurrentSubject() {
 	let subject = +sessionStorage.getItem('current-subject');

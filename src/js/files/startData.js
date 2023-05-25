@@ -1,5 +1,5 @@
 const startData = {
-	bank: 1000, // 1000
+	bank: 4000, // 1000
 
 	countBet: 50,
 	maxBet: 950,
