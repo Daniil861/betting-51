@@ -11,8 +11,6 @@ document.addEventListener('click', (e) => {
 	let targetElement = e.target;
 	let bank = +sessionStorage.getItem('money');
 
-	initStartData();
-
 	if (targetElement.closest('.preloader__button')) {
 		location.href = 'main.html';
 	}
@@ -36,8 +34,8 @@ document.addEventListener('click', (e) => {
 			checkBoughtSubjects();
 		} else noMoney(startData.nameScore);
 	} else if (targetElement.closest('[data-shop-button="1"]') && targetElement.closest('[data-subject="1"]').classList.contains('_bought')) {
-		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="1"]'));
 		sessionStorage.setItem('current-subject', 1);
+		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="1"]'));
 		writeSelected();
 	}
 
@@ -48,8 +46,8 @@ document.addEventListener('click', (e) => {
 			checkBoughtSubjects();
 		} else noMoney(startData.nameScore);
 	} else if (targetElement.closest('[data-shop-button="2"]') && targetElement.closest('[data-subject]').classList.contains('_bought')) {
-		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="2"]'));
 		sessionStorage.setItem('current-subject', 2);
+		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="2"]'));
 		writeSelected();
 	}
 
@@ -60,10 +58,13 @@ document.addEventListener('click', (e) => {
 			checkBoughtSubjects();
 		} else noMoney(startData.nameScore);
 	} else if (targetElement.closest('[data-shop-button="3"]') && targetElement.closest('[data-subject]').classList.contains('_bought')) {
-		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="3"]'));
 		sessionStorage.setItem('current-subject', 3);
+		checkRemoveAddClass('.shop__item', '_selected', targetElement.closest('[data-subject="3"]'));
 		writeSelected();
 	}
+
+	// Важно чтобы данная функция была после блока с логикой кликов по кнопкам покупки
+	initStartData();
 
 	//game
 

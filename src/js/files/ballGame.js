@@ -289,7 +289,7 @@ class Ball {
 
 		this.vy = 0.5;
 		this.vx = 3;
-		this.gravity = 0.1;
+		this.gravity = 0.3;
 
 		this.rotate = 0;
 
