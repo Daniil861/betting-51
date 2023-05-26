@@ -6,8 +6,8 @@
 	justify-content: center;
 	align-items: center;
 
-	width: 208px;
-	height: 60px;
+	width: 188px;
+	height: 54px;
 
 	background-image: linear-gradient(180deg, #ff3737 0%, #ab0000 100%);
 	border: 3px solid #fcfcfc;
@@ -26,8 +26,8 @@
 		pointer-events: none;
 	}
 	@media (min-width: 700px) and (min-height: 700px) {
-		width: 312px;
-		height: 90px;
+		width: 282px;
+		height: 81px;
 		span {
 			font-size: 30px;
 		}
